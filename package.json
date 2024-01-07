@@ -1,0 +1,45 @@
+{
+  "name": "groceryslipbackend",
+  "version": "1.0.0",
+  "description": "backend for mern stack grocery slip application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "generate-toc": "markdown-toc -i readme.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrocerySlip/groceryslippoc.git"
+  },
+  "keywords": [
+    "groceryslip"
+  ],
+  "author": "Shubham Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrocerySlip/groceryslippoc/issues"
+  },
+  "homepage": "https://github.com/GrocerySlip/groceryslippoc#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.2"
+  }
+}
