@@ -39,11 +39,23 @@ const productSchema = mongoose.Schema(
     },
     category: {
       type: String,
-      required: true,
+      required: false,
+    },
+    subCategory: {
+      type: String,
+      required: false,
+    },
+    quantity: {
+      type: Number,
+      required: false,
+    },
+    unit: {
+      type: String,
+      required: false,
     },
     description: {
       type: String,
-      required: true,
+      required: false,
     },
     reviews: [reviewSchema],
     rating: {
@@ -65,7 +77,6 @@ const productSchema = mongoose.Schema(
       type: Number,
       required: false,
     },
-
     countInStock: {
       type: Number,
       required: true,

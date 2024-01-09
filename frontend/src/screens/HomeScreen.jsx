@@ -52,7 +52,7 @@ const HomeScreen = () => {
             Grocery Items not listed in product list are also available.
           </p>
 
-          <Row>
+          <Row className="p-1">
             {/* {data.products.map((product) => (
               // <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
               <Col key={product._id} xs={12} sm={12} md={12} lg={6} xl={6}>
@@ -69,13 +69,20 @@ const HomeScreen = () => {
                 </p>
                 <p>
                   खोजी गई वस्तु अभी तक उत्पाद सूची में नहीं पहुंची है। कृपया
-                  स्टोर में जांच करने और इसे डिलीवर करवाने के लिए 8955899659 पर
-                  संपर्क करें।
+                  स्टोर में जांच करने/डिलीवर के लिए 8955899659 पर संपर्क करें।
                 </p>
               </div>
             ) : (
               data.products.map((product) => (
-                <Col key={product._id} xs={12} sm={12} md={12} lg={6} xl={6}>
+                <Col
+                  key={product._id}
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={6}
+                  xl={6}
+                  className="p-1"
+                >
                   <HorizontalProduct product={product} />
                 </Col>
               ))

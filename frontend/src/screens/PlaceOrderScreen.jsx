@@ -80,14 +80,14 @@ const PlaceOrderScreen = () => {
                   {cart.cartItems.map((item, index) => (
                     <ListGroup.Item key={index}>
                       <Row>
-                        <Col md={1}>
+                        {/* <Col md={1}>
                           <Image
                             src={item.image}
                             alt={item.name}
                             fluid
                             rounded
                           />
-                        </Col>
+                        </Col> */}
                         <Col>
                           <Link to={`/product/${item._id}`}>{item.name}</Link>
                         </Col>

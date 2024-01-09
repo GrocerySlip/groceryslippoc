@@ -5,6 +5,10 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { logout } from "./slices/authSlice";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import WhatsAppIcon from "./WhatsAppIcon.js";
+import "./WhatsAppIcon.css";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,6 +35,8 @@ const App = () => {
         <Container>
           <Outlet />
         </Container>
+
+        <WhatsAppIcon />
       </main>
       <Footer />
     </>

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useLogoutMutation } from "../slices/usersApiSlice";
 import { logout } from "../slices/authSlice";
 import SearchBox from "./SearchBox";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo only.png";
 import { resetCart } from "../slices/cartSlice";
 
 const Header = () => {
@@ -37,12 +37,25 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img
-                src={logo}
-                alt="GrocerySlip.com"
-                style={{ height: "40px", paddingRight: "15px" }}
-              />
-              GrocerySlip.com
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <img
+                  src={logo}
+                  alt="GrocerySlip.com"
+                  style={{ height: "40px", paddingRight: "15px" }}
+                />
+                <div
+                  style={{
+                    flexDirection: "column",
+                    display: "flex",
+                    fontSize: "0.8em",
+                  }}
+                >
+                  GrocerySlip.com
+                  <span style={{ fontSize: "0.52em" }}>
+                    Bikaner's Reliable Kirana store!
+                  </span>
+                </div>
+              </div>
             </Navbar.Brand>
           </LinkContainer>
           <Nav.Item>

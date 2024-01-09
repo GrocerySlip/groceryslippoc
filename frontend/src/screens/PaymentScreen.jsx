@@ -32,7 +32,7 @@ const PaymentScreen = () => {
       <CheckoutSteps step1 step2 step3 />
       <div>Payment Method. Only cash on delivery is available for now.</div>
       <h6 style={{ color: "red" }}>
-        Please pick up the call from 8955899659 to confirm order and delievery
+        Please pick up the call from 8955899659 to confirm order and delivery
         address.
       </h6>
       <Form onSubmit={submitHandler}>
