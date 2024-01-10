@@ -11,9 +11,11 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "GrocerySlip.com",
-  description: "Grocery from your kirana store",
-  keywords: "grocery, bikaner, kirana",
+  title: "groceryslip.com grocery slip",
+  description:
+    "Groceryslip.com is a website that delivers groceries in Bikaner city. Our website is a good option for fast grocery delivery in Bikaner at good price.",
+  keywords:
+    "grocery slip, bikaner, kirana store in bikaner, grocery delivery in bikaner",
 };
 
 export default Meta;

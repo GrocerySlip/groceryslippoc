@@ -6,13 +6,40 @@
   color: #fff;
   padding: 10px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   text-decoration: none;
 }
 
 .whatsapp-icon:hover {
   background-color: #128c7e;
+}
+
+.smaller-whatsapp-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.smaller-whatsapp-icon:hover {
+  background-color: #128c7e;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .whatsapp-icon {
+    bottom: 70px;
+    right: 10px;
+  }
 }

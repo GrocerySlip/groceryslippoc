@@ -21,6 +21,7 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Meta />
       {/* {!keyword ? (
         <ProductCarousel />
       ) : (
@@ -41,8 +42,6 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <Meta />
-
           <p style={{ color: "black", marginBottom: "2px", fontSize: "12px" }}>
             Call or whatsapp your grocery slip to 8955899659.
             <FaPhoneAlt /> <FaWhatsapp />
