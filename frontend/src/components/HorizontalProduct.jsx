@@ -10,7 +10,12 @@ const HorizontalProduct = ({ product }) => {
           <Row className="p-0 custom-row">
             <Col xs={4} sm={4} md={4} lg={4} xl={4}>
               {/* Image on the left */}
-              <Card.Img src={product.image} variant="top" className="p-1" />
+              <Card.Img
+                src={product.image}
+                variant="top"
+                alt={product.name + "delivery in bikaner"}
+                className="p-1"
+              />
             </Col>
             <Col xs={8} sm={8} md={8} lg={8} xl={8}>
               {/* Data on the right */}

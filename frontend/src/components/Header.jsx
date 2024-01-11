@@ -52,7 +52,7 @@ const Header = () => {
                 >
                   GrocerySlip.com
                   <span style={{ fontSize: "0.52em" }}>
-                    Bikaner's Reliable Kirana store!
+                    Kirana store in bikaner.
                   </span>
                 </div>
               </div>
@@ -61,7 +61,9 @@ const Header = () => {
           <Nav.Item>
             <FaPhoneAlt /> <FaWhatsapp />
             <span style={{ color: "white" }}>{" 8955899659     "} </span>
-            <span style={{ color: "red" }}>{" Only in Bikaner."}</span>
+            <span style={{ color: "red" }}>
+              {" Grocery delivery in Bikaner"}
+            </span>
           </Nav.Item>
           <Nav.Item style={{ marginLeft: "50px" }}>
             {"   "}

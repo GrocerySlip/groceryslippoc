@@ -67,7 +67,6 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Meta title={product.name} description={product.description} />
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
@@ -79,9 +78,14 @@ const ProductScreen = () => {
         </Message>
       ) : (
         <>
+          <Meta title={product.name} description={product.description} />
           <Row>
             <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid />
+              <Image
+                src={product.image}
+                alt={product.name + "home delivery in bikaner."}
+                fluid
+              />
             </Col>
             <Col md={3}>
               <ListGroup variant="flush">

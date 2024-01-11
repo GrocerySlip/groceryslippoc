@@ -131,11 +131,6 @@ const Paginate = ({ pages, page, isAdmin = false, keyword = "" }) => {
     return items;
   };
 
-  const handlePaginationClick = (to) => {
-    // Handle pagination click if needed
-    console.log("Navigate to:", to);
-  };
-
   return <Pagination>{renderPageNumbers()}</Pagination>;
 };
 
