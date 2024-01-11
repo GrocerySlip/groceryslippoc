@@ -13,7 +13,7 @@ const HorizontalProduct = ({ product }) => {
               <Card.Img
                 src={product.image}
                 variant="top"
-                alt={product.name + "delivery in bikaner"}
+                alt={product.name}
                 className="p-1"
               />
             </Col>

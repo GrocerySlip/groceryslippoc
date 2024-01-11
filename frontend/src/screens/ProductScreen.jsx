@@ -83,7 +83,7 @@ const ProductScreen = () => {
             <Col md={6}>
               <Image
                 src={product.image}
-                alt={product.name + "home delivery in bikaner."}
+                alt={product.name + " home delivery in bikaner."}
                 fluid
               />
             </Col>

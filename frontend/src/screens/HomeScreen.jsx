@@ -62,16 +62,16 @@ const HomeScreen = () => {
             {data.products.length === 0 ? (
               <Card>
                 <Card.Text style={{ color: "red" }}>
-                  Item not added in product list yet.
+                  खोजी गई वस्तु अभी तक उत्पाद सूची में नहीं पहुंची है। कृपया
+                  स्टोर में जांच करने तथा डिलीवर के लिए 8955899659 पर संपर्क
+                  करें।
+                </Card.Text>
+                <Card.Text style={{ color: "red" }}>
+                  Searched product is not added in product list yet.
                 </Card.Text>
                 <Card.Text style={{ color: "red" }}>
                   Please whatsapp the required Items on 8955899659, we will see
                   if we can get it delievered to you.
-                </Card.Text>
-                <Card.Text style={{ color: "red" }}>
-                  खोजी गई वस्तु अभी तक उत्पाद सूची में नहीं पहुंची है। कृपया
-                  स्टोर में जांच करने तथा डिलीवर के लिए 8955899659 पर संपर्क
-                  करें।
                 </Card.Text>
               </Card>
             ) : (
