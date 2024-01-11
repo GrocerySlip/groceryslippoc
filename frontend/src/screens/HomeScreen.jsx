@@ -1,4 +1,4 @@
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useGetProductsQuery } from "../slices/productsApiSlice";
 import { Link } from "react-router-dom";
@@ -60,17 +60,20 @@ const HomeScreen = () => {
             ))} */}
 
             {data.products.length === 0 ? (
-              <div>
-                <p>
-                  Searched item hasn't reached the product list yet. Please
-                  contact 8955899659 for checking at store and getting it
-                  delivered.
-                </p>
-                <p>
+              <Card>
+                <Card.Text style={{ color: "red" }}>
+                  Item not added in product list yet.
+                </Card.Text>
+                <Card.Text style={{ color: "red" }}>
+                  Please whatsapp the required Items on 8955899659, we will see
+                  if we can get it delievered to you.
+                </Card.Text>
+                <Card.Text style={{ color: "red" }}>
                   खोजी गई वस्तु अभी तक उत्पाद सूची में नहीं पहुंची है। कृपया
-                  स्टोर में जांच करने/डिलीवर के लिए 8955899659 पर संपर्क करें।
-                </p>
-              </div>
+                  स्टोर में जांच करने तथा डिलीवर के लिए 8955899659 पर संपर्क
+                  करें।
+                </Card.Text>
+              </Card>
             ) : (
               data.products.map((product) => (
                 <Col

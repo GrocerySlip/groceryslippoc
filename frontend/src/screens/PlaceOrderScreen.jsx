@@ -123,8 +123,8 @@ const PlaceOrderScreen = () => {
                   <Col>
                     {/* {cart.shippingPrice} {" " + "\u20B9"} */}
                     <p style={{ fontSize: "10px", color: "red" }}>
-                      10{" " + "\u20B9"}/Km for more than 2 Km from Jailroad
-                      Bikaner. Contact 8955899669 for confirmation or waiver.
+                      Negotiable (Depending upon order value, distance and
+                      speed.)
                       <br></br>
                     </p>
                   </Col>
@@ -144,6 +144,13 @@ const PlaceOrderScreen = () => {
                   <Col>
                     {cart.totalPrice} {" " + "\u20B9"} + Shipping charges if
                     applicable.
+                  </Col>
+                </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Row>
+                  <Col>
+                    *Shipping charges will be confirmed on phone or whatsapp.
                   </Col>
                 </Row>
               </ListGroup.Item>

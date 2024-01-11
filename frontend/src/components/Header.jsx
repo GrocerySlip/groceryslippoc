@@ -61,7 +61,7 @@ const Header = () => {
           <Nav.Item>
             <FaPhoneAlt /> <FaWhatsapp />
             <span style={{ color: "white" }}>{" 8955899659     "} </span>
-            <span style={{ color: "red" }}>
+            <span style={{ color: "orange" }}>
               {" Grocery delivery in Bikaner"}
             </span>
           </Nav.Item>
